@@ -1,0 +1,22 @@
+# Dependencies and build output
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+coverage
+
+# Secrets — only .env.example is committed
+.env
+.env.*
+!.env.example
+
+# Runtime data: the SQLite database and uploaded media (a Docker volume in production)
+/data
+
+# Build-time encoded seed photographs (scripts/prepare-assets.mjs regenerates them)
+/.seed-media
+
+# OS and editor
+.DS_Store
+Thumbs.db

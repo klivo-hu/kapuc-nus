@@ -1,0 +1,202 @@
+@import '../styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: var(--cef-background);
+    color: var(--cef-foreground);
+    font-family: var(--cef-font-sans);
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    /* Anchored sections land below the floating navigation, not under it. */
+    scroll-padding-top: calc(var(--cef-space-nav) + var(--cef-space-nav-offset) * 3);
+    scrollbar-color: rgb(var(--cef-color-latte-400-rgb)) rgb(var(--cef-color-cream-200-rgb));
+  }
+
+  body {
+    font-size: var(--cef-text-body);
+    line-height: var(--cef-leading-body);
+    caret-color: rgb(var(--cef-color-mocha-700-rgb));
+  }
+
+  ::selection {
+    background: rgb(var(--cef-color-latte-300-rgb));
+    color: rgb(var(--cef-color-espresso-900-rgb));
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--cef-font-serif);
+    font-weight: 400;
+    text-wrap: balance;
+    font-optical-sizing: auto;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--cef-focus-rgb));
+    outline-offset: 3px;
+  }
+
+  /* Numbers that line up: prices, opening hours, counters. */
+  data,
+  time,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /*
+   * Image arrival. An image fades in once decoded instead of painting top to bottom. Only when
+   * JavaScript is running (the `js` class is set before first paint) is the image ever hidden,
+   * and the global load listener in app/head-script.ts reveals it — so no script, no hiding.
+   */
+  .js img[data-fade]:not([data-loaded]) {
+    opacity: 0;
+  }
+  img[data-fade] {
+    transition: opacity 600ms var(--cef-ease-decelerate);
+  }
+
+  /*
+   * Intro curtain. Rendered hidden; shown only when the head script decided to play it (first
+   * visit this session, motion allowed). If the curtain script never runs, the failsafe
+   * animation removes it after four seconds so the page is never held behind it.
+   */
+  [data-intro-curtain] {
+    display: none;
+  }
+  .intro-pending [data-intro-curtain] {
+    display: grid;
+    animation: intro-failsafe 0s linear 4s forwards;
+  }
+  .intro-pending body {
+    overflow: hidden;
+  }
+
+  /* The fixed action dock on small screens; floating layers keep clear of it. */
+  :root {
+    --cef-space-dock: 4.25rem;
+  }
+  @media (min-width: 1024px) {
+    :root {
+      --cef-space-dock: 0px;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes intro-failsafe {
+    to {
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* The page column: one max width, one gutter, everywhere. */
+  .shell {
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--cef-container);
+    padding-inline: var(--cef-space-gutter);
+  }
+
+  /*
+   * A dark surface (the coffee-brown sections, the grey-green footer, the lightbox): the focus
+   * ring and text selection turn light so both keep their contrast against it.
+   */
+  .surface-dark {
+    --cef-focus-rgb: var(--cef-color-cream-50-rgb);
+  }
+  .surface-dark ::selection {
+    background: rgb(var(--cef-color-cream-100-rgb));
+    color: rgb(var(--cef-color-espresso-900-rgb));
+  }
+
+  /* A link whose underline is drawn in from the left on hover rather than toggled. */
+  .link-draw {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size var(--cef-duration-slow) var(--cef-ease-decelerate);
+    text-decoration: none;
+  }
+  .link-draw:hover,
+  .link-draw:focus-visible,
+  .link-draw[aria-current='page'] {
+    background-size: 100% 1px;
+  }
+
+  /* Long-form text from the CMS: legal pages and about-page prose. */
+  .prose-k {
+    max-width: var(--cef-measure);
+    color: rgb(var(--cef-foreground-rgb));
+  }
+  .prose-k > * + * {
+    margin-top: 1.1em;
+  }
+  .prose-k h2 {
+    margin-top: 2.2em;
+    font-size: var(--cef-text-h3);
+    line-height: var(--cef-leading-heading);
+  }
+  .prose-k h3 {
+    margin-top: 1.8em;
+    font-size: var(--cef-text-h4);
+    line-height: 1.3;
+  }
+  .prose-k ul {
+    list-style: disc;
+    padding-left: 1.25em;
+  }
+  .prose-k ol {
+    list-style: decimal;
+    padding-left: 1.25em;
+  }
+  .prose-k li + li {
+    margin-top: 0.4em;
+  }
+  .prose-k a {
+    color: rgb(var(--cef-color-mocha-700-rgb));
+    text-decoration: underline;
+  }
+  .prose-k strong {
+    font-weight: 600;
+  }
+}

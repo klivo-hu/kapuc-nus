@@ -1,0 +1,8 @@
+.next/
+node_modules/
+coverage/
+data/
+.seed-media/
+.cef/
+pnpm-lock.yaml
+package-lock.json

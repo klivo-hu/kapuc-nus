@@ -1,0 +1,90 @@
+frameworkVersion: 2
+project:
+  name: kapucinus
+  type: fullstack
+  created: 2026-09-30T18:33:33.158Z
+  cefVersion: 0.1.0
+engines:
+  - accessibility
+  - ai-seo
+  - architecture
+  - components
+  - core
+  - deployment
+  - design
+  - docker
+  - experience
+  - legal
+  - motion
+  - performance
+  - platform
+  - security
+  - seo
+  - validation
+skills:
+  - animate
+  - emil-design-eng
+  - frontend-design
+  - impeccable
+  - taste
+  - uiux-pro-max
+  - ux-designer
+mcp:
+  - chrome-devtools
+  - inspo
+metadata:
+  description: 'Kapucinus Kávézó is a premium specialty coffee shop and cafe in Hatvan, Hungary. The cafe serves coffee, breakfast, sandwiches, pastries, cakes, cold drinks and cocktails. The site needs a cafe menu page (food and drinks), an about page, a photo gallery, the venue location with a map, directions and opening hours, social media links, and a built-in admin for hero slides, menu items and gallery images.'
+  framework: nextjs
+  language: typescript
+  packageManager: npm
+  styling: tailwind
+  uiLibrary: shadcn
+  animation: gsap
+  database: sqlite
+  orm: none
+  authentication: none
+  cms: none
+docker:
+  enabled: true
+  port: 80
+features:
+  adminPanel: true
+  blog: false
+  commerce: false
+  legalPages: true
+  aiSeo: true
+  githubActions: true
+deployment:
+  target: docker
+languages:
+  primary: hu
+  additional: []
+  country: HU
+generatedFiles:
+  - .cef/consent.json
+  - .cef/design/impeccable.md
+  - .cef/design/scroll-motion.md
+  - .cef/manifest.yaml
+  - .cef/memory.md
+  - .cef/project.json
+  - .cef/runtime.json
+  - .editorconfig
+  - .env
+  - .env.example
+  - .github/workflows/ci.yml
+  - .gitignore
+  - .prettierignore
+  - .prettierrc.json
+  - CLAUDE.md
+  - Dockerfile
+  - README.md
+  - content/legal/cookie-policy.md
+  - content/legal/impressum.md
+  - content/legal/privacy-policy.md
+  - content/legal/terms.md
+  - docker-compose.dev.yml
+  - docker-compose.yml
+  - eslint.config.js
+  - package.json
+  - public/llms.txt
+  - tsconfig.json

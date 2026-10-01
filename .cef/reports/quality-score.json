@@ -1,0 +1,42 @@
+{
+  "projectName": "kapucinus",
+  "reviewedAt": "2026-10-01T16:19:10.866Z",
+  "overall": 78,
+  "readiness": 72,
+  "recommendation": "conditional",
+  "requiredPassed": true,
+  "byGate": {
+    "architecture": 100,
+    "design": 100,
+    "impeccable": 0,
+    "motion": 99,
+    "accessibility": 100,
+    "performance": 100,
+    "seo": 0,
+    "security": 100,
+    "content": 0,
+    "brand": 99,
+    "legal": 70,
+    "consent": 100,
+    "docker": 100,
+    "testing": 100,
+    "documentation": 100
+  },
+  "gateStatus": {
+    "architecture": "pass",
+    "design": "pass",
+    "impeccable": "warn",
+    "motion": "pass",
+    "accessibility": "pass",
+    "performance": "pass",
+    "seo": "warn",
+    "security": "pass",
+    "content": "warn",
+    "brand": "pass",
+    "legal": "warn",
+    "consent": "pass",
+    "docker": "pass",
+    "testing": "pass",
+    "documentation": "pass"
+  }
+}

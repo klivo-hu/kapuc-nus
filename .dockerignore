@@ -1,0 +1,22 @@
+node_modules
+.next
+out
+.git
+.env
+.env.*
+!.env.example
+.cef
+.claude
+.github
+coverage
+npm-debug.log*
+# Runtime data and build outputs are produced inside the image, never copied in.
+data
+.seed-media
+Dockerfile
+.dockerignore
+# Compose files are not needed inside the image, and keeping them out means editing the local
+# stack never invalidates a production build layer.
+docker-compose.yml
+docker-compose.dev.yml
+docker-compose.local.yml

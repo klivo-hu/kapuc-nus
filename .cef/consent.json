@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "locale": "hu",
+  "categories": [
+    {
+      "id": "necessary",
+      "essential": true,
+      "defaultGranted": true,
+      "label": {
+        "en": "Strictly necessary",
+        "hu": "Feltétlenül szükséges"
+      },
+      "description": {
+        "en": "Required for the site to work — security, session, and your consent choice itself. These cannot be switched off.",
+        "hu": "Az oldal működéséhez és a döntésed megjegyzéséhez szükséges. Nem kapcsolható ki."
+      },
+      "googleSignals": [
+        "security_storage"
+      ]
+    },
+    {
+      "id": "functional",
+      "essential": false,
+      "defaultGranted": false,
+      "label": {
+        "en": "Functional",
+        "hu": "Külső tartalmak"
+      },
+      "description": {
+        "en": "Remembers preferences such as language and theme. Declining keeps the site working with defaults.",
+        "hu": "A Google Térkép a helyszínnél. Betöltéskor a Google sütiket helyezhet el a böngésződben."
+      },
+      "googleSignals": [
+        "functionality_storage",
+        "personalization_storage"
+      ]
+    }
+  ],
+  "placement": "bottom-right-card",
+  "tone": "card",
+  "blocking": false,
+  "rejectAllVisible": true,
+  "showCategoriesUpFront": false,
+  "storage": {
+    "key": "cef-consent",
+    "maxAgeDays": 180,
+    "medium": "cookie"
+  },
+  "googleConsentMode": true,
+  "reopenSelector": "[data-consent-reopen]",
+  "policyPath": "/cookie-tajekoztato",
+  "copy": {
+    "title": {
+      "en": "Choose what we store",
+      "hu": "Sütik és külső tartalmak"
+    },
+    "body": {
+      "en": "We store only what this site needs to work until you choose otherwise. Analytics and marketing stay off until you allow them.",
+      "hu": "Az oldal működéséhez csak a feltétlenül szükséges sütit használjuk. A Google Térkép betöltésekor a Google is elhelyezhet sütiket, ehhez a hozzájárulásodat kérjük."
+    },
+    "acceptAll": {
+      "en": "Allow all",
+      "hu": "Mindent engedélyezek"
+    },
+    "rejectAll": {
+      "en": "Reject all",
+      "hu": "Csak a szükségeset"
+    },
+    "customize": {
+      "en": "Choose purposes",
+      "hu": "Beállítások"
+    },
+    "save": {
+      "en": "Save choices",
+      "hu": "Választás mentése"
+    },
+    "preferencesTitle": {
+      "en": "Storage purposes",
+      "hu": "Tárolási célok"
+    },
+    "preferencesBody": {
+      "en": "Allow each purpose separately. You can change this at any time from Cookie settings in the footer.",
+      "hu": "Minden célt külön engedélyezhetsz. A döntésedet bármikor módosíthatod a lábléc „Süti beállítások” gombjával."
+    },
+    "policyLink": {
+      "en": "Read the cookie policy",
+      "hu": "Cookie tájékoztató"
+    },
+    "reopen": {
+      "en": "Cookie settings",
+      "hu": "Süti beállítások"
+    },
+    "alwaysOn": {
+      "en": "Always on",
+      "hu": "Mindig aktív"
+    }
+  },
+  "motionPreset": "fade-in"
+}

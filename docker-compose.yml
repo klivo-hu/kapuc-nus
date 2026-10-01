@@ -1,0 +1,32 @@
+# Deploys to the Klivo Docker hosting platform (Traefik file-provider routing).
+# The container name and network embed the client slug "kapucinus"; if your platform
+# client uses a different slug, regenerate with "cef generate --client-slug <slug>"
+# or edit the names below to match.
+#
+# The named volume holds the SQLite database and every uploaded image. It survives
+# redeploys; back it up (see deploy/DEPLOY.md). Never replace it with a bind mount here.
+services:
+  hosting_kapucinus_web:
+    build: .
+    container_name: hosting_kapucinus_web
+    restart: unless-stopped
+    env_file:
+      - .env
+    expose:
+      - '80'
+    volumes:
+      - kapucinus_data:/app/data
+    networks:
+      - client_kapucinus_net
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '3'
+
+volumes:
+  kapucinus_data:
+
+networks:
+  client_kapucinus_net:
+    external: true

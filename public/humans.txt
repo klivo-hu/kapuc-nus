@@ -1,0 +1,6 @@
+/* SITE */
+Name: Kapucinus Kávézó
+Language: Hungarian
+Standards: HTML, CSS, WCAG 2.2 AA, schema.org
+Components: Next.js, React, GSAP, SQLite, sharp
+Built with: Claude Enterprise Framework (CEF)

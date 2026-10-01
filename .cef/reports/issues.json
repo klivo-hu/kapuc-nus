@@ -1,0 +1,488 @@
+{
+  "issues": [
+    {
+      "id": "impeccable-1",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#f7f1e8`",
+      "file": "app/layout.tsx:17",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-2",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#d6bea4`",
+      "file": "lib/content/media.ts:56",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-3",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#9c6a3e`",
+      "file": "scripts/latte-art.mjs:90",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-4",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#fbf8f3`",
+      "file": "scripts/latte-art.mjs:97",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-5",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#efe8de`",
+      "file": "scripts/latte-art.mjs:98",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-6",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#ddd2c4`",
+      "file": "scripts/latte-art.mjs:99",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-7",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#e6ddd0`",
+      "file": "scripts/latte-art.mjs:102",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-8",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#cfc3b3`",
+      "file": "scripts/latte-art.mjs:103",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-9",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#f3ede4`",
+      "file": "scripts/latte-art.mjs:104",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-10",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#c49b70`",
+      "file": "scripts/latte-art.mjs:107",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-11",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#a97646`",
+      "file": "scripts/latte-art.mjs:108",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-12",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#8a5630`",
+      "file": "scripts/latte-art.mjs:109",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-13",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#5c331b`",
+      "file": "scripts/latte-art.mjs:110",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-14",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#a47552`",
+      "file": "scripts/latte-art.mjs:111",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-15",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#fff8ec`",
+      "file": "scripts/latte-art.mjs:114",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-16",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#fff8ec`",
+      "file": "scripts/latte-art.mjs:115",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-17",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#3b2418`",
+      "file": "scripts/latte-art.mjs:147",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-18",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#cfa579`",
+      "file": "scripts/latte-art.mjs:156",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-19",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#f7efe4`",
+      "file": "scripts/latte-art.mjs:158",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-20",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#b08050`",
+      "file": "scripts/latte-art.mjs:162",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-21",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-051 Color outside the palette: Outside the token palette. — `#3d2213`",
+      "file": "scripts/latte-art.mjs:166",
+      "recommendation": "Use a color token, or add the value to the palette deliberately and record the decision."
+    },
+    {
+      "id": "impeccable-22",
+      "gate": "impeccable",
+      "severity": "minor",
+      "message": "IM-007 Cream or beige default surface: #FBF7F1 sits in the cream/beige default range. — `#FBF7F1`",
+      "file": "styles/tokens.css:14",
+      "recommendation": "Take the background from a deliberate palette, chosen for this product."
+    },
+    {
+      "id": "impeccable-23",
+      "gate": "impeccable",
+      "severity": "nit",
+      "message": "15 rules need a rendered page: IM-016, IM-034, IM-035, IM-030, IM-031, IM-032, IM-033, IM-036, IM-037, IM-038, IM-041, IM-047, IM-048, IM-049, IM-058.",
+      "recommendation": "Settle these during browser validation (Chrome DevTools MCP)."
+    },
+    {
+      "id": "motion-24",
+      "gate": "motion",
+      "severity": "nit",
+      "message": "4 scroll rules need a rendered page: GS-15, GS-19, GS-20, GS-24.",
+      "recommendation": "Settle these at browser validation (TE-08) — scroll FPS, pin layout shift, focus inside a pin, and repeated entrances."
+    },
+    {
+      "id": "seo-25",
+      "gate": "seo",
+      "severity": "major",
+      "message": "Missing SEO artifact \"public/llms.txt\".",
+      "file": "public/llms.txt"
+    },
+    {
+      "id": "seo-26",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Missing SEO artifact \"public/security.txt\".",
+      "file": "public/security.txt"
+    },
+    {
+      "id": "seo-27",
+      "gate": "seo",
+      "severity": "major",
+      "message": "Missing SEO artifact \"app/opengraph-image.tsx\".",
+      "file": "app/opengraph-image.tsx"
+    },
+    {
+      "id": "seo-28",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Missing SEO artifact \"public/schema.json\".",
+      "file": "public/schema.json"
+    },
+    {
+      "id": "seo-29",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/beallitasok/page.tsx"
+    },
+    {
+      "id": "seo-30",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/galeria/page.tsx"
+    },
+    {
+      "id": "seo-31",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/helyszin/page.tsx"
+    },
+    {
+      "id": "seo-32",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/hero/page.tsx"
+    },
+    {
+      "id": "seo-33",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/hero/uj/page.tsx"
+    },
+    {
+      "id": "seo-34",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/jogi/page.tsx"
+    },
+    {
+      "id": "seo-35",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/kategoriak/page.tsx"
+    },
+    {
+      "id": "seo-36",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/kiemelt/page.tsx"
+    },
+    {
+      "id": "seo-37",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/kozossegi/page.tsx"
+    },
+    {
+      "id": "seo-38",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/page.tsx"
+    },
+    {
+      "id": "seo-39",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/rolunk/page.tsx"
+    },
+    {
+      "id": "seo-40",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/termekek/page.tsx"
+    },
+    {
+      "id": "seo-41",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/(panel)/termekek/uj/page.tsx"
+    },
+    {
+      "id": "seo-42",
+      "gate": "seo",
+      "severity": "minor",
+      "message": "Page declares no canonical URL.",
+      "file": "app/admin/belepes/page.tsx"
+    },
+    {
+      "id": "content-43",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "app/(site)/error.tsx"
+    },
+    {
+      "id": "content-44",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "app/(site)/not-found.tsx"
+    },
+    {
+      "id": "content-45",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "app/(site)/not-found.tsx"
+    },
+    {
+      "id": "content-46",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/admin/hero/uj\" has no matching page.",
+      "file": "app/admin/(panel)/hero/page.tsx"
+    },
+    {
+      "id": "content-47",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/admin/hero/uj\" has no matching page.",
+      "file": "app/admin/(panel)/hero/page.tsx"
+    },
+    {
+      "id": "content-48",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/admin/kategoriak\" has no matching page.",
+      "file": "app/admin/(panel)/termekek/page.tsx"
+    },
+    {
+      "id": "content-49",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "app/admin/belepes/page.tsx"
+    },
+    {
+      "id": "content-50",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "app/not-found.tsx"
+    },
+    {
+      "id": "content-51",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "components/admin/admin-nav.tsx"
+    },
+    {
+      "id": "content-52",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/admin\" has no matching page.",
+      "file": "components/admin/admin-nav.tsx"
+    },
+    {
+      "id": "content-53",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/rolunk\" has no matching page.",
+      "file": "components/home/about-section.tsx"
+    },
+    {
+      "id": "content-54",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/home/featured-products.tsx"
+    },
+    {
+      "id": "content-55",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/home/hero-carousel.tsx"
+    },
+    {
+      "id": "content-56",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/home/hero.tsx"
+    },
+    {
+      "id": "content-57",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/site/mobile-dock.tsx"
+    },
+    {
+      "id": "content-58",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/site/mobile-menu.tsx"
+    },
+    {
+      "id": "content-59",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "components/site/page-intro.tsx"
+    },
+    {
+      "id": "content-60",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "components/site/site-footer.tsx"
+    },
+    {
+      "id": "content-61",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/\" has no matching page.",
+      "file": "components/site/site-header.tsx"
+    },
+    {
+      "id": "content-62",
+      "gate": "content",
+      "severity": "minor",
+      "message": "Internal link \"/etlap\" has no matching page.",
+      "file": "components/site/visit-band.tsx"
+    },
+    {
+      "id": "content-63",
+      "gate": "content",
+      "severity": "nit",
+      "message": "Grammar and tone require a human read-through before approval.",
+      "recommendation": "Proofread all shipped copy."
+    },
+    {
+      "id": "brand-64",
+      "gate": "brand",
+      "severity": "nit",
+      "message": "Brand alignment (voice, imagery, tone) needs a human sign-off.",
+      "recommendation": "Have the brand owner review before approval."
+    },
+    {
+      "id": "legal-65",
+      "gate": "legal",
+      "severity": "major",
+      "message": "Required legal page \"Terms of Service\" is not present.",
+      "recommendation": "Author the Terms of Service page: Governs use of the site and services."
+    },
+    {
+      "id": "legal-66",
+      "gate": "legal",
+      "severity": "major",
+      "message": "Generated legal text requires review by a qualified legal professional.",
+      "recommendation": "Generated legal text is a draft only. It MUST be reviewed by a qualified legal professional before publication; CEF does not provide legal advice."
+    }
+  ]
+}

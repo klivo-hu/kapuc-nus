@@ -1,0 +1,26 @@
+# LOCAL RUN OF THE PRODUCTION IMAGE — the hosting platform never reads this file.
+#
+#   cp .env.example .env        # fill in ADMIN_PASSWORD_HASH and SESSION_SECRET
+#   docker compose -f docker-compose.local.yml up --build
+#   open http://localhost:8080
+#
+# The same image as production, published on localhost:8080 with its own named volume. Cookies
+# are allowed over plain http here only (COOKIE_SECURE=false) because there is no TLS locally.
+name: kapucinus-local
+
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      SITE_URL: http://localhost:8080
+      COOKIE_SECURE: 'false'
+    ports:
+      - '8080:80'
+    volumes:
+      - kapucinus_local_data:/app/data
+
+volumes:
+  kapucinus_local_data:
